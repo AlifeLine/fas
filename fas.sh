@@ -1121,7 +1121,7 @@ echo
 echo "检查安装环境"
 safe
 yum -y install curl wget openssl >/dev/null 2>&1
-host=https://down.cangshui.net/-mysh/FAS/
+host=https://github.com/SkyourDotCn/fas/blob/master/
 logo
 }
 main
