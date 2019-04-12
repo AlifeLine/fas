@@ -117,6 +117,7 @@ iptables -A INPUT -p tcp -m tcp --dport 3306 -j ACCEPT
 iptables -A INPUT -p udp -m udp --dport 137 -j ACCEPT
 iptables -A INPUT -p udp -m udp --dport 138 -j ACCEPT
 iptables -A INPUT -p udp -m udp --dport 53 -j ACCEPT
+iptables -A INPUT -p udp -m udp --dport 67 -j ACCEPT
 iptables -A INPUT -p udp -m udp --dport 5353 -j ACCEPT
 iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
@@ -1121,7 +1122,7 @@ echo
 echo "检查安装环境"
 safe
 yum -y install curl wget openssl >/dev/null 2>&1
-host=https://github.com/SkyourDotCn/fas/blob/master/
+host=https://raw.githubusercontent.com/SkyourDotCn/fas/master/
 logo
 }
 main
